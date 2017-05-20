@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE2012AF1ED00BF300A856A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012AE1ED00BF300A856A8 /* AppDelegate.swift */; };
+		EE2012B51ED00BF300A856A8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012B41ED00BF300A856A8 /* GameScene.swift */; };
+		EE2012B71ED00BF300A856A8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012B61ED00BF300A856A8 /* GameViewController.swift */; };
+		EE2012BA1ED00BF300A856A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2012B81ED00BF300A856A8 /* Main.storyboard */; };
+		EE2012BC1ED00BF300A856A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2012BB1ED00BF300A856A8 /* Assets.xcassets */; };
+		EE2012BF1ED00BF300A856A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2012BD1ED00BF300A856A8 /* LaunchScreen.storyboard */; };
+		EE2012CA1ED00BF300A856A8 /* SnipTheVineGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012C91ED00BF300A856A8 /* SnipTheVineGameTests.swift */; };
+		EE2012D51ED00BF300A856A8 /* SnipTheVineGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012D41ED00BF300A856A8 /* SnipTheVineGameUITests.swift */; };
+		EE2012EA1ED00D0B00A856A8 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2012E71ED00D0B00A856A8 /* Particle.png */; };
+		EE2012EB1ED00D0B00A856A8 /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = EE2012E81ED00D0B00A856A8 /* Particle.sks */; };
+		EE2012EC1ED00D0B00A856A8 /* Particle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2012E91ED00D0B00A856A8 /* Particle@2x.png */; };
+		EE2012F41ED00D3E00A856A8 /* VineData.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE2012F31ED00D3E00A856A8 /* VineData.plist */; };
+		EE2012F61ED012FE00A856A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012F51ED012FE00A856A8 /* Constants.swift */; };
+		EE2012F81ED0239200A856A8 /* VineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2012F71ED0239200A856A8 /* VineNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE2012C61ED00BF300A856A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE2012A31ED00BF300A856A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2012AA1ED00BF300A856A8;
+			remoteInfo = SnipTheVineGame;
+		};
+		EE2012D11ED00BF300A856A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE2012A31ED00BF300A856A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2012AA1ED00BF300A856A8;
+			remoteInfo = SnipTheVineGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE2012AB1ED00BF300A856A8 /* SnipTheVineGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnipTheVineGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2012AE1ED00BF300A856A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE2012B41ED00BF300A856A8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EE2012B61ED00BF300A856A8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EE2012B91ED00BF300A856A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE2012BB1ED00BF300A856A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE2012BE1ED00BF300A856A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE2012C01ED00BF300A856A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2012C51ED00BF300A856A8 /* SnipTheVineGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnipTheVineGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2012C91ED00BF300A856A8 /* SnipTheVineGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipTheVineGameTests.swift; sourceTree = "<group>"; };
+		EE2012CB1ED00BF300A856A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2012D01ED00BF300A856A8 /* SnipTheVineGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnipTheVineGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2012D41ED00BF300A856A8 /* SnipTheVineGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnipTheVineGameUITests.swift; sourceTree = "<group>"; };
+		EE2012D61ED00BF300A856A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2012E71ED00D0B00A856A8 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
+		EE2012E81ED00D0B00A856A8 /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Particle.sks; sourceTree = "<group>"; };
+		EE2012E91ED00D0B00A856A8 /* Particle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Particle@2x.png"; sourceTree = "<group>"; };
+		EE2012EF1ED00D3800A856A8 /* CheeZeeJungle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CheeZeeJungle.caf; sourceTree = "<group>"; };
+		EE2012F01ED00D3800A856A8 /* NomNom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NomNom.caf; sourceTree = "<group>"; };
+		EE2012F11ED00D3800A856A8 /* Slice.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slice.caf; sourceTree = "<group>"; };
+		EE2012F21ED00D3800A856A8 /* Splash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.caf; sourceTree = "<group>"; };
+		EE2012F31ED00D3E00A856A8 /* VineData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VineData.plist; sourceTree = "<group>"; };
+		EE2012F51ED012FE00A856A8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE2012F71ED0239200A856A8 /* VineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VineNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE2012A81ED00BF300A856A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012C21ED00BF300A856A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012CD1ED00BF300A856A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE2012A21ED00BF300A856A8 = {
+			isa = PBXGroup;
+			children = (
+				EE2012AD1ED00BF300A856A8 /* SnipTheVineGame */,
+				EE2012C81ED00BF300A856A8 /* SnipTheVineGameTests */,
+				EE2012D31ED00BF300A856A8 /* SnipTheVineGameUITests */,
+				EE2012AC1ED00BF300A856A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE2012AC1ED00BF300A856A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012AB1ED00BF300A856A8 /* SnipTheVineGame.app */,
+				EE2012C51ED00BF300A856A8 /* SnipTheVineGameTests.xctest */,
+				EE2012D01ED00BF300A856A8 /* SnipTheVineGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2012AD1ED00BF300A856A8 /* SnipTheVineGame */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012AE1ED00BF300A856A8 /* AppDelegate.swift */,
+				EE2012E41ED00CB000A856A8 /* Sprites */,
+				EE2012E31ED00C8D00A856A8 /* Scenes */,
+				EE2012E21ED00C8400A856A8 /* ViewControllers */,
+				EE2012E51ED00CC500A856A8 /* Support */,
+			);
+			path = SnipTheVineGame;
+			sourceTree = "<group>";
+		};
+		EE2012C81ED00BF300A856A8 /* SnipTheVineGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012C91ED00BF300A856A8 /* SnipTheVineGameTests.swift */,
+				EE2012CB1ED00BF300A856A8 /* Info.plist */,
+			);
+			path = SnipTheVineGameTests;
+			sourceTree = "<group>";
+		};
+		EE2012D31ED00BF300A856A8 /* SnipTheVineGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012D41ED00BF300A856A8 /* SnipTheVineGameUITests.swift */,
+				EE2012D61ED00BF300A856A8 /* Info.plist */,
+			);
+			path = SnipTheVineGameUITests;
+			sourceTree = "<group>";
+		};
+		EE2012E21ED00C8400A856A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012B61ED00BF300A856A8 /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE2012E31ED00C8D00A856A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012B41ED00BF300A856A8 /* GameScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		EE2012E41ED00CB000A856A8 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012F71ED0239200A856A8 /* VineNode.swift */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		EE2012E51ED00CC500A856A8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012F51ED012FE00A856A8 /* Constants.swift */,
+				EE2012EE1ED00D2200A856A8 /* Data */,
+				EE2012ED1ED00D1900A856A8 /* Sounds */,
+				EE2012E61ED00CE700A856A8 /* Particles */,
+				EE2012B81ED00BF300A856A8 /* Main.storyboard */,
+				EE2012BB1ED00BF300A856A8 /* Assets.xcassets */,
+				EE2012BD1ED00BF300A856A8 /* LaunchScreen.storyboard */,
+				EE2012C01ED00BF300A856A8 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		EE2012E61ED00CE700A856A8 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012E71ED00D0B00A856A8 /* Particle.png */,
+				EE2012E81ED00D0B00A856A8 /* Particle.sks */,
+				EE2012E91ED00D0B00A856A8 /* Particle@2x.png */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+		EE2012ED1ED00D1900A856A8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012EF1ED00D3800A856A8 /* CheeZeeJungle.caf */,
+				EE2012F01ED00D3800A856A8 /* NomNom.caf */,
+				EE2012F11ED00D3800A856A8 /* Slice.caf */,
+				EE2012F21ED00D3800A856A8 /* Splash.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		EE2012EE1ED00D2200A856A8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE2012F31ED00D3E00A856A8 /* VineData.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE2012AA1ED00BF300A856A8 /* SnipTheVineGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2012D91ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGame" */;
+			buildPhases = (
+				EE2012A71ED00BF300A856A8 /* Sources */,
+				EE2012A81ED00BF300A856A8 /* Frameworks */,
+				EE2012A91ED00BF300A856A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnipTheVineGame;
+			productName = SnipTheVineGame;
+			productReference = EE2012AB1ED00BF300A856A8 /* SnipTheVineGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE2012C41ED00BF300A856A8 /* SnipTheVineGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2012DC1ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGameTests" */;
+			buildPhases = (
+				EE2012C11ED00BF300A856A8 /* Sources */,
+				EE2012C21ED00BF300A856A8 /* Frameworks */,
+				EE2012C31ED00BF300A856A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2012C71ED00BF300A856A8 /* PBXTargetDependency */,
+			);
+			name = SnipTheVineGameTests;
+			productName = SnipTheVineGameTests;
+			productReference = EE2012C51ED00BF300A856A8 /* SnipTheVineGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE2012CF1ED00BF300A856A8 /* SnipTheVineGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2012DF1ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGameUITests" */;
+			buildPhases = (
+				EE2012CC1ED00BF300A856A8 /* Sources */,
+				EE2012CD1ED00BF300A856A8 /* Frameworks */,
+				EE2012CE1ED00BF300A856A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2012D21ED00BF300A856A8 /* PBXTargetDependency */,
+			);
+			name = SnipTheVineGameUITests;
+			productName = SnipTheVineGameUITests;
+			productReference = EE2012D01ED00BF300A856A8 /* SnipTheVineGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE2012A31ED00BF300A856A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "覃子轩";
+				TargetAttributes = {
+					EE2012AA1ED00BF300A856A8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TQ42Q3YS7A;
+						ProvisioningStyle = Automatic;
+					};
+					EE2012C41ED00BF300A856A8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE2012AA1ED00BF300A856A8;
+					};
+					EE2012CF1ED00BF300A856A8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE2012AA1ED00BF300A856A8;
+					};
+				};
+			};
+			buildConfigurationList = EE2012A61ED00BF300A856A8 /* Build configuration list for PBXProject "SnipTheVineGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE2012A21ED00BF300A856A8;
+			productRefGroup = EE2012AC1ED00BF300A856A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE2012AA1ED00BF300A856A8 /* SnipTheVineGame */,
+				EE2012C41ED00BF300A856A8 /* SnipTheVineGameTests */,
+				EE2012CF1ED00BF300A856A8 /* SnipTheVineGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE2012A91ED00BF300A856A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2012EB1ED00D0B00A856A8 /* Particle.sks in Resources */,
+				EE2012BA1ED00BF300A856A8 /* Main.storyboard in Resources */,
+				EE2012F41ED00D3E00A856A8 /* VineData.plist in Resources */,
+				EE2012EC1ED00D0B00A856A8 /* Particle@2x.png in Resources */,
+				EE2012BC1ED00BF300A856A8 /* Assets.xcassets in Resources */,
+				EE2012BF1ED00BF300A856A8 /* LaunchScreen.storyboard in Resources */,
+				EE2012EA1ED00D0B00A856A8 /* Particle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012C31ED00BF300A856A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012CE1ED00BF300A856A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE2012A71ED00BF300A856A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2012B51ED00BF300A856A8 /* GameScene.swift in Sources */,
+				EE2012B71ED00BF300A856A8 /* GameViewController.swift in Sources */,
+				EE2012AF1ED00BF300A856A8 /* AppDelegate.swift in Sources */,
+				EE2012F81ED0239200A856A8 /* VineNode.swift in Sources */,
+				EE2012F61ED012FE00A856A8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012C11ED00BF300A856A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2012CA1ED00BF300A856A8 /* SnipTheVineGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2012CC1ED00BF300A856A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2012D51ED00BF300A856A8 /* SnipTheVineGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE2012C71ED00BF300A856A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE2012AA1ED00BF300A856A8 /* SnipTheVineGame */;
+			targetProxy = EE2012C61ED00BF300A856A8 /* PBXContainerItemProxy */;
+		};
+		EE2012D21ED00BF300A856A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE2012AA1ED00BF300A856A8 /* SnipTheVineGame */;
+			targetProxy = EE2012D11ED00BF300A856A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE2012B81ED00BF300A856A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2012B91ED00BF300A856A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE2012BD1ED00BF300A856A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2012BE1ED00BF300A856A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE2012D71ED00BF300A856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE2012D81ED00BF300A856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE2012DA1ED00BF300A856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TQ42Q3YS7A;
+				INFOPLIST_FILE = SnipTheVineGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE2012DB1ED00BF300A856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TQ42Q3YS7A;
+				INFOPLIST_FILE = SnipTheVineGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE2012DD1ED00BF300A856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnipTheVineGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnipTheVineGame.app/SnipTheVineGame";
+			};
+			name = Debug;
+		};
+		EE2012DE1ED00BF300A856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnipTheVineGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnipTheVineGame.app/SnipTheVineGame";
+			};
+			name = Release;
+		};
+		EE2012E01ED00BF300A856A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnipTheVineGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SnipTheVineGame;
+			};
+			name = Debug;
+		};
+		EE2012E11ED00BF300A856A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnipTheVineGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aiesst.SnipTheVineGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SnipTheVineGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE2012A61ED00BF300A856A8 /* Build configuration list for PBXProject "SnipTheVineGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2012D71ED00BF300A856A8 /* Debug */,
+				EE2012D81ED00BF300A856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2012D91ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2012DA1ED00BF300A856A8 /* Debug */,
+				EE2012DB1ED00BF300A856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2012DC1ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2012DD1ED00BF300A856A8 /* Debug */,
+				EE2012DE1ED00BF300A856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2012DF1ED00BF300A856A8 /* Build configuration list for PBXNativeTarget "SnipTheVineGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2012E01ED00BF300A856A8 /* Debug */,
+				EE2012E11ED00BF300A856A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE2012A31ED00BF300A856A8 /* Project object */;
+}
